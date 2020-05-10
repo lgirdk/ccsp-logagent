@@ -465,6 +465,9 @@ int main(int argc, char* argv[])
     errno_t rc       = -1;
     int     ind      = -1;
    
+    // Buffer characters till newline for stdout and stderr
+    setlinebuf(stdout);
+    setlinebuf(stderr);
 
     for (idx = 1; idx < argc; idx++)
     {
