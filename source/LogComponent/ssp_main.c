@@ -433,6 +433,9 @@ int main(int argc, char* argv[])
     char *subSys            = NULL;  
     DmErr_t    err;
    
+    // Buffer characters till newline for stdout and stderr
+    setlinebuf(stdout);
+    setlinebuf(stderr);
 
     for (idx = 1; idx < argc; idx++)
     {
