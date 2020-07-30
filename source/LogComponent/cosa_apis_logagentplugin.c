@@ -131,7 +131,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	RDKLogLevel = *puLong;
@@ -145,7 +145,7 @@ LogAgent_GetParamUlongValue
         if( AnscEqualString(ParamName, "X_RDKCENTRAL-COM_TR69_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_TR69_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	TR69_RDKLogLevel = *puLong;
@@ -159,7 +159,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_PAM_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_PAM_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	PAM_RDKLogLevel = *puLong;
@@ -173,7 +173,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_PSM_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_PSM_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	PSM_RDKLogLevel = *puLong;
@@ -187,7 +187,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_MTA_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_MTA_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	MTA_RDKLogLevel = *puLong;
@@ -201,7 +201,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_CM_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_CM_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	CM_RDKLogLevel = *puLong;
@@ -215,7 +215,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_WiFi_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_WiFi_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	WiFi_RDKLogLevel = *puLong;
@@ -229,7 +229,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_CR_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_CR_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	CR_RDKLogLevel = *puLong;
@@ -243,7 +243,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_Harvester_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_Harvester_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	Harvester_RDKLogLevel = *puLong;
@@ -257,7 +257,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_NotifyComp_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_NotifyComp_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	NOTIFY_RDKLogLevel = *puLong;
@@ -271,7 +271,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_PowerMgr_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_PowerMgr_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	PWRMGR_RDKLogLevel = *puLong;
@@ -285,7 +285,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_EthAgent_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_EthAgent_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	ETHAGENT_RDKLogLevel = *puLong;
@@ -299,7 +299,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_FSC_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_FSC_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	FSC_RDKLogLevel = *puLong;
@@ -313,7 +313,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_Mesh_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_Mesh_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	MESH_RDKLogLevel = *puLong;
@@ -327,7 +327,7 @@ LogAgent_GetParamUlongValue
         if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_MeshService_LogLevel", TRUE))
         {
         	syscfg_get( NULL, "X_RDKCENTRAL-COM_MeshService_LogLevel", buf, sizeof(buf));
-        	if( buf[0] != "\0" )
+        	if( buf[0] != '\0' )
         	{
         		*puLong  = (ULONG )atoi(buf);
                 	MeshService_RDKLogLevel = *puLong;
@@ -1045,7 +1045,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_LoggerEnable", TRUE))
     {
     	syscfg_get( NULL, "X_RDKCENTRAL-COM_LoggerEnable", buf, sizeof(buf));
-    	if( buf[0] != "\0" )
+    	if( buf[0] != '\0' )
     	{
     		*pBool = (BOOL)atoi(buf);
     		RDKLogEnable = *pBool;
@@ -1059,7 +1059,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_TR69_LoggerEnable", TRUE))
     {
     	syscfg_get( NULL, "X_RDKCENTRAL-COM_TR69_LoggerEnable", buf, sizeof(buf));
-    	if( buf[0] != "\0" )
+    	if( buf[0] != '\0' )
     	{
     		*pBool = (BOOL)atoi(buf);
     		TR69_RDKLogEnable = *pBool;
@@ -1073,7 +1073,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_PAM_LoggerEnable", TRUE))
     {
 	syscfg_get( NULL, "X_RDKCENTRAL-COM_PAM_LoggerEnable", buf, sizeof(buf));
-    	if( buf[0] != "\0" )
+    	if( buf[0] != '\0' )
     	{
     		*pBool = (BOOL)atoi(buf);
     		PAM_RDKLogEnable = *pBool;
@@ -1087,7 +1087,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_PSM_LoggerEnable", TRUE))
     {
 	syscfg_get( NULL, "X_RDKCENTRAL-COM_PSM_LoggerEnable", buf, sizeof(buf));
-    	if( buf[0] != "\0" )
+    	if( buf[0] != '\0' )
     	{
     		*pBool = (BOOL)atoi(buf);
     		PSM_RDKLogEnable = *pBool;
@@ -1101,7 +1101,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_MTA_LoggerEnable", TRUE))
     {
 	syscfg_get( NULL, "X_RDKCENTRAL-COM_MTA_LoggerEnable", buf, sizeof(buf));
-    	if( buf[0] != "\0" )
+    	if( buf[0] != '\0' )
     	{
     		*pBool = (BOOL)atoi(buf);
     		MTA_RDKLogEnable = *pBool;
@@ -1115,7 +1115,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_CM_LoggerEnable", TRUE))
     {
 	syscfg_get( NULL, "X_RDKCENTRAL-COM_CM_LoggerEnable", buf, sizeof(buf));
-    	if( buf[0] != "\0" )
+    	if( buf[0] != '\0' )
     	{
     		*pBool = (BOOL)atoi(buf);
     		CM_RDKLogEnable = *pBool;
@@ -1129,7 +1129,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_WiFi_LoggerEnable", TRUE))
     {
 	syscfg_get( NULL, "X_RDKCENTRAL-COM_WiFi_LoggerEnable", buf, sizeof(buf));
-    	if( buf[0] != "\0" )
+    	if( buf[0] != '\0' )
     	{
     		*pBool =(BOOL)atoi(buf);
     		WiFi_RDKLogEnable = *pBool;
@@ -1143,7 +1143,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_CR_LoggerEnable", TRUE))
     {
 	syscfg_get( NULL, "X_RDKCENTRAL-COM_CR_LoggerEnable", buf, sizeof(buf));
-    	if( buf[0] != "\0" )
+    	if( buf[0] != '\0' )
     	{
     		*pBool = (BOOL)atoi(buf);
     		CR_RDKLogEnable = *pBool;
@@ -1157,7 +1157,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_Harvester_LoggerEnable", TRUE))
     {
 	syscfg_get( NULL, "X_RDKCENTRAL-COM_Harvester_LoggerEnable", buf, sizeof(buf));
-    	if( buf[0] != "\0" )
+    	if( buf[0] != '\0' )
     	{
     		*pBool = (BOOL)atoi(buf);
     		Harvester_RDKLogEnable = *pBool;
@@ -1171,7 +1171,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_NotifyComp_LoggerEnable", TRUE))
     {
         syscfg_get( NULL, "X_RDKCENTRAL-COM_NotifyComp_LoggerEnable", buf, sizeof(buf));
-        if( buf[0] != "\0" )
+        if( buf[0] != '\0' )
         {
             	*pBool = (BOOL)atoi(buf);
             	NOTIFY_RDKLogEnable = *pBool;
@@ -1185,7 +1185,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_PowerMgr_LoggerEnable", TRUE))
     {
         syscfg_get( NULL, "X_RDKCENTRAL-COM_PowerMgr_LoggerEnable", buf, sizeof(buf));
-        if( buf[0] != "\0" )
+        if( buf[0] != '\0' )
         {
             	*pBool = (BOOL)atoi(buf);
             	PWRMGR_RDKLogEnable = *pBool;
@@ -1199,7 +1199,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_EthAgent_LoggerEnable", TRUE))
     {
         syscfg_get( NULL, "X_RDKCENTRAL-COM_EthAgent_LoggerEnable", buf, sizeof(buf));
-        if( buf[0] != "\0" )
+        if( buf[0] != '\0' )
         {
             	*pBool = (BOOL)atoi(buf);
             	ETHAGENT_RDKLogEnable = *pBool;
@@ -1213,7 +1213,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_FSC_LoggerEnable", TRUE))
     {
         syscfg_get( NULL, "X_RDKCENTRAL-COM_FSC_LoggerEnable", buf, sizeof(buf));
-        if( buf[0] != "\0" )
+        if( buf[0] != '\0' )
         {
             	*pBool = (BOOL)atoi(buf);
             	FSC_RDKLogEnable = *pBool;
@@ -1227,7 +1227,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_Mesh_LoggerEnable", TRUE))
     {
         syscfg_get( NULL, "X_RDKCENTRAL-COM_Mesh_LoggerEnable", buf, sizeof(buf));
-        if( buf[0] != "\0" )
+        if( buf[0] != '\0' )
         {
             	*pBool = (BOOL)atoi(buf);
             	MESH_RDKLogEnable = *pBool;
@@ -1241,7 +1241,7 @@ LogAgent_GetParamBoolValue
     if (AnscEqualString(ParamName, "X_RDKCENTRAL-COM_MeshService_LoggerEnable", TRUE))
     {
         syscfg_get( NULL, "X_RDKCENTRAL-COM_MeshService_LoggerEnable", buf, sizeof(buf));
-        if( buf[0] != "\0" )
+        if( buf[0] != '\0' )
         {
             	*pBool = (BOOL)atoi(buf);
             	MeshService_RDKLogEnable = *pBool;
